@@ -1,0 +1,21 @@
+{
+  "name": "hellotypescript",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "CC0-1.0",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run mocha --recursive ./src/**/__tests__/*",
+    "mocha": "mocha -r ts-node/register"
+  },
+  "devDependencies": {
+    "@types/chai": "3.5.1",
+    "@types/mocha": "2.2.41",
+    "chai": "3.5.0",
+    "mocha": "3.3.0",
+    "typescript": "2.2.2"
+  },
+  "dependencies": {
+    "ts-node": "3.0.2"
+  }
+}

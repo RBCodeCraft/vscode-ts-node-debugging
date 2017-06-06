@@ -4,7 +4,7 @@
         "target": "es5",
         "noImplicitAny": true,
         "outDir": "./dist",
-        "sourceMap": true
+        "inlineSourceMap": true
     },
     "include": [
         "src/**/*"

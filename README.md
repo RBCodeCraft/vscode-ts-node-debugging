@@ -14,8 +14,9 @@ npm install
 
 This repo contains the following VS Code Debug tasks (accessible via the debug button on the left)
 
- * `Current TS File` - Allows you to debug the currently open TypeScript file (try it with `src/index.ts`)
  * `Current TS Tests File` - Allows you to debug the currently open `mocha` unit tests file (try it with `src/__tests__/person.tests.ts`)
+
+ * `Current TS File` - Sadly this **no longer seems to work** with the latest VS Code + NodeJS (above 6.10.1) :(
 
 These tasks should allow you to hit breakpoints in your code, without needing to compile first.
 

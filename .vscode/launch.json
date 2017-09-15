@@ -5,6 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "node",
+            "request": "launch",
+            "args": ["${workspaceRoot}/src/index.ts"],
+            "protocol": "inspector",
+            "cwd": "${workspaceRoot}",
+            "console": "internalConsole",
+            "name": "Server TS",
+            "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
+            "sourceMaps": true,
+            "stopOnEntry": false
+        },
+        {
             "name": "Current TS Tests File",
             "type": "node",
             "request": "launch",

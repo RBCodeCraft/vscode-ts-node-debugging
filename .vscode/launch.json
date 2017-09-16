@@ -12,17 +12,19 @@
             "args": ["-r", "ts-node/register", "${relativeFile}"],
             "sourceMaps": true,
             "cwd": "${workspaceRoot}",
-            "protocol": "inspector"
+            "protocol": "inspector",
+            "internalConsoleOptions": "openOnSessionStart"
         },
         {
             "name": "Current TS File",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/node_modules/ts-node/dist/_bin.js",
             "args": ["${relativeFile}"],
+            "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
             "sourceMaps": true,
             "cwd": "${workspaceRoot}",
-            "protocol": "inspector"
+            "protocol": "inspector",
+            "internalConsoleOptions": "openOnSessionStart"
         }
     ]
 }

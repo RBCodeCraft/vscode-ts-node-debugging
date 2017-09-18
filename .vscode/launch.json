@@ -7,7 +7,8 @@
             "request": "launch",
             "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
             "args": ["-r", "ts-node/register", "${relativeFile}"],
-            "cwd": "${workspaceRoot}"
+            "cwd": "${workspaceRoot}",
+            "protocol": "inspector"
         },
         {
             "name": "Current TS File",
@@ -15,7 +16,8 @@
             "request": "launch",
             "args": ["${relativeFile}"],
             "runtimeArgs": ["-r", "ts-node/register"],
-            "cwd": "${workspaceRoot}"
+            "cwd": "${workspaceRoot}",
+            "protocol": "inspector"
         }
     ]
 }

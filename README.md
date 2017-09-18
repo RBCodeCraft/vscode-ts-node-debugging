@@ -19,11 +19,11 @@ This repo contains the following VS Code Debug tasks (accessible via the debug b
 
 **Current TS File** - allows you to debug the currently open TypeScript file. Try it with `src/index.ts`:
 
-![image](https://user-images.githubusercontent.com/101152/30521793-65d226d4-9bc5-11e7-874d-316d088141bc.png)
+![image](/screenshots/ts-file-debugging.png)
 
 **Current TS Tests File** - allows you to debug the currently open Mocha unit tests file. Try it with `src/__tests__/person.tests.ts`:
 
-![image](https://user-images.githubusercontent.com/101152/30521725-8fb08f32-9bc4-11e7-87ca-5b409f670d48.png)
+![image](/screenshots/mocha-debugging.png)
 
 These tasks should allow you to hit breakpoints in your code, without needing to compile first.
 
